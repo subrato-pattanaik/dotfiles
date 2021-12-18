@@ -1,0 +1,27 @@
+[user]
+	email = subrato.pattanaik@gmail.com
+	name = subrato-pattanaik
+[core]
+	editor = \"C:\\Users\\Shree\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" --wait
+	autocrlf = false
+	safecrlf = false
+[alias]
+  lg = log --color --graph --pretty=format:'%C(yellow)%h%Creset | %Cgreen%s%Creset %C(red)%d%Creset %C(bold blue)[%an]%Creset %C(magenta)(%cr)' --abbrev-commit --branches
+[color]
+	ui = true
+	status = auto
+	branch = auto
+	diff = auto
+	interactive = auto
+[color "status"]
+  added = green
+	changed = blue
+	untracked = red
+	header = magenta
+	branch = cyan
+[color "branch"]
+  current = cyan
+  remote = green
+	
+	
+	
