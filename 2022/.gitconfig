@@ -1,0 +1,74 @@
+# --------------/* 🚀 Git Config file 🚀*\---------------------
+# For reader, a '#' or ';' character indicates  comment
+# ----------------------------------------------------------------
+#
+# Following is the list of git configl
+#
+
+; user details
+[user]
+	email = subrato.pattanaik@gmail.com
+	name = subrato-pattanaik
+
+; core variables
+[core]
+	editor = \"C:\\Users\\Shree\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+	autocrlf = false
+	excludesfile= Users/Shree/.gitignore_global
+
+; shortcut git commands 😍 loving it
+[alias]
+
+  ; checkout
+	co = checkout
+	cb = checkout -b
+
+	; staged/add
+	staged = add .
+
+	; stash
+	hide = stash -u
+	expose = stash pop
+
+	; commit
+	cm = commit -m
+	amend = commit --amend
+	noedit = commit --amend --no-edit 
+	
+	; unstaged
+	unstage = reset @~1 
+	softly= reset --soft @~1
+	changes = restore --staged .
+
+  lg = log --color --graph --pretty=format:'%C(yellow)%h%Creset || %Cgreen%s%Creset %C(red)%d%Creset %C(bold blue)[%an]%Creset %C(magenta)(%cr)' --abbrev-commit
+
+; making git log more readable 
+[log]
+	date = human
+
+[status]
+	showStash = true
+	renames = true
+
+[stash]
+	showIncludeUntracked = true
+
+[rebase]
+	autoStash = true
+
+[color]
+	ui = true
+
+[color "status"]
+  added = green
+	changed = blue
+	untracked = red
+	header = magenta
+	branch = bold cyan
+
+[color "branch"]
+  current = cyan
+  remote = green
+	
+# --------------------- /* No more config, Enough Subro !!! 😅*\ ----------------------
+
