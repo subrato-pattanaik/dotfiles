@@ -31,7 +31,7 @@
 	expose = stash pop
 
 	; commit
-	cm = commit -m
+	cm = commit
 	amend = commit --amend
 	noedit = commit --amend --no-edit 
 	
@@ -58,17 +58,16 @@
 
 [color]
 	ui = true
-
+	
 [color "status"]
-  added = green
-	changed = blue
-	untracked = red
-	header = magenta
-	branch = bold cyan
+  	added = green
+		changed = blue
+		untracked = red
+		branch = cyan bold		
 
 [color "branch"]
-  current = cyan
-  remote = green
+    local = green
+    current = cyan bold
+		remote = red
 	
 # --------------------- /* No more config, Enough Subro !!! 😅*\ ----------------------
-
