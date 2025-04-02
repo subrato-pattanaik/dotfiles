@@ -19,14 +19,14 @@
 ; shortcut git commands 😍 loving it
 [alias]
 
-  ; checkout
+        ; checkout
 	co = checkout
 	cb = checkout -b
 
-	; staged/add
+        ; staged/add
 	staged = add .
 
-	; stash
+        ; stash
 	hide = stash -u
 	expose = stash pop
 
@@ -40,7 +40,7 @@
 	softly= reset --soft @~1
 	changes = restore --staged .
 
-  lg = log --color --graph --pretty=format:'%C(yellow)%h%Creset || %Cgreen%s%Creset %C(red)%d%Creset %C(bold blue)[%an]%Creset %C(magenta)(%cr)' --abbrev-commit
+        lg = log --color --graph --pretty=format:'%C(yellow)%h%Creset || %Cgreen%s%Creset %C(red)%d%Creset %C(bold blue)[%an]%Creset %C(magenta)(%cr)' --abbrev-commit
 
 ; making git log more readable 
 [log]
@@ -61,13 +61,13 @@
 	
 [color "status"]
   	added = green
-		changed = blue
-		untracked = red
-		branch = cyan bold		
+	changed = blue
+	untracked = red
+	branch = cyan bold		
 
 [color "branch"]
-    local = green
-    current = cyan bold
-		remote = red
+        local = green
+        current = cyan bold
+	remote = red
 	
 # --------------------- /* No more config, Enough Subro !!! 😅*\ ----------------------
